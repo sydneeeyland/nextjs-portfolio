@@ -10,7 +10,7 @@ import About from './modules/about';
 import Skills from './modules/skills';
 import Portfolio from './modules/portfolio';
 
-export default function index() {
+export default function Index() {
   const [index, setIndex] = useState(0);
 
   return (
@@ -35,6 +35,6 @@ export default function index() {
   );
 }
 
-index.Layout = function Layout(page: ReactNode) {
+Index.Layout = function Layout(page: ReactNode) {
   return <Landing>{page}</Landing>;
 };
