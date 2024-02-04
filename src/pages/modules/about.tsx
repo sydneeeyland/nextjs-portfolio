@@ -37,7 +37,7 @@ function About() {
               </div>
               <div className="font-60">
                 <span>I</span>
-                <span>'</span>
+                <span>&apos;</span>
                 <span className="space">m</span>
                 <span> </span>
                 <span>S</span>
