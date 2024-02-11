@@ -8,7 +8,12 @@ type Props = {
 function Contact({ state }: Props) {
   return (
     <div className="overlay_sides overlay_sides_right">
-      <a className="btn_light" href="#contact">
+      <a
+        className="btn_light"
+        href="https://www.linkedin.com/in/syd-2a4795167/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Contact
       </a>
       <nav className="nav__wrapper">

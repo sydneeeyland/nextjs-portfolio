@@ -1,4 +1,6 @@
 import { ReactNode, useState } from 'react';
+import Head from 'next/head';
+import Script from 'next/script';
 import ReactPageScroller from 'react-page-scroller';
 
 import Landing from '@layout/Landing';
@@ -17,6 +19,9 @@ export default function Index() {
 
   return (
     <>
+      <Head>
+        <title>DVLP - Syd Enciso</title>
+      </Head>
       <Logo />
       <div className="fullpage-wrapper">
         <div className="fullpage">
