@@ -32,10 +32,22 @@ function Contact({ state }: Props) {
             <a title="skills"></a>
           </li>
           <li
-            data-menuanchor="portfolio"
+            data-menuanchor="experiences"
             className={`${state === 3 ? 'active' : ''}`}
           >
+            <a title="experiences"></a>
+          </li>
+          <li
+            data-menuanchor="portfolio"
+            className={`${state === 4 ? 'active' : ''}`}
+          >
             <a title="portfolio"></a>
+          </li>
+          <li
+            data-menuanchor="portfolio2"
+            className={`${state === 5 ? 'active' : ''}`}
+          >
+            <a title="portfolio2"></a>
           </li>
           <div className="line" />
         </ul>

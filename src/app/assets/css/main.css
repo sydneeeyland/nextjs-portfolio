@@ -504,6 +504,23 @@ code {
   transform: translateY(200px);
 }
 
+.overlay_sides.overlay_sides_right
+  .nav__wrapper
+  #side_nav
+  li:nth-child(6).active
+  ~ .line,
+.overlay_sides.overlay_sides_right
+  .nav__wrapper
+  #side_nav
+  li:nth-child(6).passedSection:hover
+  ~ .line,
+.overlay_sides.overlay_sides_right
+  .nav__wrapper
+  #side_nav
+  li:nth-child(6):hover
+  ~ .line {
+  transform: translateY(250px);
+}
 .overlay_sides.overlay_sides_right .nav__wrapper #side_nav .line {
   height: 50px;
   width: 3px;

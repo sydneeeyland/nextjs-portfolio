@@ -9,6 +9,8 @@ import Home from './modules/home';
 import About from './modules/about';
 import Skills from './modules/skills';
 import Experiences from './modules/experiences';
+import Portfolio1 from './modules/portfolio1';
+import Portfolio2 from './modules/portfolio2';
 
 export default function Index() {
   const [index, setIndex] = useState(0);
@@ -25,6 +27,8 @@ export default function Index() {
             <About />
             <Skills />
             <Experiences />
+            <Portfolio1 />
+            <Portfolio2 />
           </ReactPageScroller>
         </div>
       </div>
