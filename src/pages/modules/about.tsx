@@ -19,50 +19,28 @@ function About() {
               alt="dark-cube"
               className="dark_cube2 animate__animated animate__slideInUp animate__delay-1s"
               src={DarkCube2}
-              width={200}
-              height={165.56}
+              style={{ width: 'auto', height: 'auto' }}
             />
             <Image
               alt="purple-romb"
               className="purple_romb2 animate__animated"
               src={PurpleRomb2}
-              width={150}
-              height={133.91}
+              style={{ width: 'auto', height: 'auto' }}
             />
             <h1 className="about_me font-60 animate__animated animate__slideInUp animate__delay-1s ">
               <div className="font-60">
-                <span>H</span>
-                <span>i</span>
+                <span>Hi</span>
                 <span className="space">,</span>
               </div>
               <div className="font-60">
-                <span>I</span>
-                <span>&apos;</span>
-                <span className="space">m</span>
-                <span> </span>
-                <span>S</span>
-                <span>y</span>
-                <span>d</span>
-                <span>n</span>
-                <span>e</span>
-                <span>y</span>
+                <span>I&apos;m Sydney</span>
               </div>
               <div className="font-60">
-                <span>W</span>
-                <span>e</span>
-                <span className="space">b</span>
-                <span> </span>
-                <span>D</span>
-                <span>e</span>
-                <span>v</span>
-                <span>e</span>
-                <span>l</span>
-                <span>o</span>
-                <span>p</span>
-                <span>e</span>
-                <span>r</span>
+                <span>Software</span>
+                <span className="space"></span>
+                <span>Engineer</span>
               </div>
-              <p>Front End Developer / JavaScript Fan</p>
+              <p>Front-End / Back-End Developer / JavaScript Fan</p>
             </h1>
             <div className="about_info animate__animated animate__slideInUp animate__delay-1s">
               <p>Professionally connected with the web development industry.</p>

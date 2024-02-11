@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 
 import ComputerGraphic from '@/app/components/ComputerGraphics';
@@ -7,21 +7,7 @@ import CodeDecor2 from '@/app/components/CodeDecor2';
 import Hero from '@/app/assets/images/hero-side-dots.png';
 import PurpleRomb from '@/app/assets/images/purple_romb1.png';
 
-type Props = {
-  state: number;
-};
-
-function Home({ state }: Props) {
-  const [animate, setAnimate] = useState('');
-
-  useEffect(() => {
-    if (state !== 0) {
-      setAnimate('animate__fadeOutUpBig animate__slower');
-    } else {
-      setAnimate('animate__slideInDown animate__delay-1s');
-    }
-  }, [state]);
-
+function Home() {
   return (
     <section
       key="#home"
@@ -30,23 +16,12 @@ function Home({ state }: Props) {
       <div className="fp-tableCell">
         <div className="innerin">
           <div className="hero">
-            <Image alt="side-dots" className="dots_decor" src={Hero} />
+            <Image alt="side-dots" className="dots_decor" src={Hero} priority />
             <div
-              className={`hero_cont animate__animated animate__fadeIn ${animate}`}
+              className="hero_cont animate__animated animate__fadeIn"
               style={{ animationDuration: '1000ms', animationDelay: '400ms' }}
             >
               <h1 className="font-60">
-                <div>
-                  <span>F</span>
-                  <span>r</span>
-                  <span>o</span>
-                  <span>n</span>
-                  <span>t</span>
-                  <span>-</span>
-                  <span>E</span>
-                  <span>n</span>
-                  <span>d</span>
-                </div>
                 <div>
                   <span>S</span>
                   <span>o</span>
@@ -58,21 +33,20 @@ function Home({ state }: Props) {
                   <span>e</span>
                 </div>
                 <div>
-                  <span>D</span>
+                  <span>E</span>
+                  <span>n</span>
+                  <span>g</span>
+                  <span>i</span>
+                  <span>n</span>
                   <span>e</span>
-                  <span>v</span>
-                  <span>e</span>
-                  <span>l</span>
-                  <span>o</span>
-                  <span>p</span>
                   <span>e</span>
                   <span>r</span>
                 </div>
               </h1>
               <p className="hero_blurb">
                 Resolving design problems, building smart user interfaces and
-                useful interactions, developing rich web applications and
-                seamless web experiences.
+                back-end services, developing rich web applications and seamless
+                web experiences.
               </p>
               <a className="text_white" href="#about">
                 About me
@@ -92,14 +66,17 @@ function Home({ state }: Props) {
             </div>
             <Image
               alt="purple-romb"
-              className={`purple_romb1 animate__animated  animate__fadeIn ${animate}`}
+              className="purple_romb1 animate__animated  animate__fadeIn "
               src={PurpleRomb}
-              width={200}
-              height={222.77}
-              style={{ animationDuration: '700ms', animationDelay: '800ms' }}
+              style={{
+                animationDuration: '700ms',
+                animationDelay: '800ms',
+                width: 'auto',
+                height: 'auto',
+              }}
             />
             <div
-              className={`hero_graphic animate__animated  animate__fadeIn ${animate}`}
+              className="hero_graphic animate__animated  animate__fadeIn"
               style={{ animationDuration: '1000ms', animationDelay: '200ms' }}
             >
               <ComputerGraphic />

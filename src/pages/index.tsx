@@ -8,7 +8,7 @@ import Contact from '@/app/components/Contact';
 import Home from './modules/home';
 import About from './modules/about';
 import Skills from './modules/skills';
-import Portfolio from './modules/portfolio';
+import Experiences from './modules/experiences';
 
 export default function Index() {
   const [index, setIndex] = useState(0);
@@ -19,14 +19,12 @@ export default function Index() {
       <div className="fullpage-wrapper">
         <div className="fullpage">
           <ReactPageScroller
-            pageOnChange={(e) => console.log(e)}
-            onBeforePageScroll={(pageIndex: number) => setIndex(pageIndex)}
-            // customPageNumber={this.state.currentPage}
+            pageOnChange={(pageIndex: number) => setIndex(pageIndex)}
           >
-            <Home state={index} />
+            <Home />
             <About />
             <Skills />
-            <Portfolio />
+            <Experiences />
           </ReactPageScroller>
         </div>
       </div>

@@ -41,10 +41,9 @@ function Skills() {
               </p>
               <p>
                 HTML, CSS, JS, building small and medium web applications with
-                Vue or React, custom plugins, features, animations, and coding
-                interactive layouts. I have also full-stack developer experience
-                with one of the most popular open source CMS on the web -
-                WordPress
+                NextJS or React, custom plugins, features, animations, and
+                coding interactive layouts. I have also full-stack developer
+                experience with NodeJS, Express.
               </p>
               <p>
                 Visit my{' '}

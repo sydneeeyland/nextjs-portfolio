@@ -3,7 +3,7 @@ import React from 'react';
 function Logo() {
   return (
     <div className="overlay_sides overlay_sides_left">
-      <a href="#about">
+      <a>
         <div className="logo">
           <svg
             width="40"
@@ -26,7 +26,7 @@ function Logo() {
               fill="#000000"
             ></rect>
           </svg>
-          <h1>DVLPR</h1>
+          <h1>SYDNEY</h1>
         </div>
       </a>
       <a
