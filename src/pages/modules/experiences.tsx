@@ -45,12 +45,8 @@ function Experiences() {
           autoPlay={false}
         >
           {experience.map((keys, index) => (
-            <div className="innerin">
-              <div
-                key={`${index} - ${keys.company}`}
-                className="about_section"
-                style={{ padding: '0 0 0 60px' }}
-              >
+            <div key={`${index} - ${keys.company}`} className="innerin">
+              <div className="about_section" style={{ padding: '0 0 0 60px' }}>
                 <Image
                   alt="dark-cube"
                   className="dark_cube2 animate__animated"
